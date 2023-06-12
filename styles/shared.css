@@ -1,0 +1,78 @@
+body {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: rgb(227, 255, 246);
+}
+
+.page-content {
+  padding: 10px;
+  width: 75%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-content h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.seminars {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.seminar {
+  font-size: 1rem;
+  background-color: white;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.seminar-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;  
+  background-color:rgb(170, 213, 213);
+} 
+
+.seminar-image-container img {
+  width: 100px;
+  height: 100px;
+}
+
+.seminar-content {
+  font-size: 1rem;
+  color: red;
+  padding: 10px;
+}
+
+.seminar-content h1 {
+  text-align: left;
+}
+
+.seminar-content h1 {
+  color: green;
+}
+
+.seminar-content p {
+  color: blue;
+}
+
+@media (max-width: 480px) {
+  .seminars {
+    flex-direction: row;
+    flex-grow: 1;
+    overflow: auto;
+    justify-content: none;
+    justify-items: flex-start;
+  }
+
+  .seminar {
+    flex-direction: column;
+  }
+}

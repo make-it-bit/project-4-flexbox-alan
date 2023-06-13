@@ -1,22 +1,22 @@
+:root {
+  --content-font: Arial, Helvetica, sans-serif;
+}
+
 body {
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  background-color: rgb(227, 255, 246);
+  background-color: rgb(237, 255, 249);
 }
 
 .page-content {
   padding: 10px;
   width: 75%;
   margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--content-font);
 }
 
 .page-content h1 {
   font-size: 1.5rem;
   text-align: center;
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .seminars {
@@ -36,9 +36,9 @@ body {
 .seminar-image-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;  
-  background-color:rgb(170, 213, 213);
-} 
+  justify-content: space-evenly;
+  background-color: rgb(170, 213, 213);
+}
 
 .seminar-image-container img {
   width: 100px;
@@ -68,11 +68,12 @@ body {
     flex-direction: row;
     flex-grow: 1;
     overflow: auto;
-    justify-content: none;
+    justify-content: left;
     justify-items: flex-start;
   }
 
   .seminar {
     flex-direction: column;
+    min-width: 250px;
   }
 }

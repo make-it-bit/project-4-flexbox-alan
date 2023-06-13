@@ -1,0 +1,50 @@
+.page-content {
+  width: 96%;
+  background-color: red;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5rem;
+  background-color: aqua;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.tasks-group {
+  background-color: blue;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 300px;
+}
+
+.tasks-group-label {
+  background-color: pink;
+  text-align: center;
+  padding: 5px;
+}
+
+.tasks-group-list {
+  background-color: orange;
+  padding: 5px;
+  overflow: auto;
+}
+
+.tasks-group-list::-webkit-scrollbar {
+  display: none;
+}
+
+.tasks-container::-webkit-scrollbar {
+  display: none;
+}
+
+.task {
+  background-color: green;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

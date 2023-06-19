@@ -23,16 +23,15 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #bbbbbb;
+  background-color: #d7d7d7;
 }
 
 .topnav a.active {
-  background-color: #898989;
+  background-color: #bbbbbb;
 }
 
 .page-content {
   padding: 10px;
-  width: 75%;
   margin: auto;
   font-family: var(--content-font);
 }

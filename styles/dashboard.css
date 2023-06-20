@@ -1,5 +1,5 @@
 .page-content {
-  background-color: red;
+  background-color: rgb(235, 235, 235);
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -38,7 +38,7 @@
 }
 
 .dashboard {
-  background-color: orange;
+  background-color: rgb(235, 235, 235);
   padding: 5px;
   display: flex;
   flex-direction: row;
@@ -46,21 +46,35 @@
 }
 
 .left-panel {
-  background-color: green;
-  background: #36c;
+  background-color: white;
   display: flex;
   flex-direction: column;
   flex: 1 0 15%;
   gap: 1rem;
   padding: 1rem;
+  border-radius: 10px;
+}
+
+.left-panel h1 {
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .nav-button {
   padding: 10px;
+  border: solid 1px silver;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: black;
+  color: white;
 }
 
 .right-panel {
-  background-color: violet;
+  background-color: rgb(235, 235, 235);
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -69,43 +83,72 @@
 }
 
 .right-panel-top {
-  background-color: aqua;
+  background-color: rgb(235, 235, 235);
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 1rem;
   padding: 5px;
 }
 
 .right-panel-top-left {
-  background-color: gold;
+  background-color: white;
+  border-radius: 10px;
   padding: 5px;
   display: flex;
-  gap: 0.1rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  flex: 1;
+}
+
+.dashboard-buttons-row {
+  display: flex;
+  gap: 0.2rem;
 }
 
 .dashboard-button {
-  padding: 10px 20px;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dashboard-button:hover {
+  background-color: transparent;
+  border: solid 1px rgb(82, 100, 176);
+  color: rgb(82, 100, 176);
 }
 
 .right-panel-top-right {
-  background-color: salmon;
+  background-color: white;
+  border-radius: 10px;
   padding: 5px;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex: 3;
   gap: 1rem;
 }
 
 .info-box {
-  background-color: silver;
+  background-color: white;
   width: 100px;
   height: 100px;
+  border: solid 1px silver;
+  border-radius: 5px;
+}
+
+.info-box h1,
+.info-box p {
+  text-align: center;
 }
 
 .right-panel-bottom {
-  background-color: darkcyan;
+  background-color: white;
+  border-radius: 10px;
   flex-grow: 1;
   padding: 5px;
 }
@@ -117,5 +160,26 @@
 
   .left-panel {
     min-width: unset;
+  }
+}
+
+@media (max-width: 580px) {
+  .info-box {
+    width: 70px;
+    height: 70px;
+  }
+
+  .info-box h1 {
+    font-size: 1.2rem;
+  }
+
+  .info-box p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .right-panel-top {
+    flex-direction: column;
   }
 }

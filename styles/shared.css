@@ -2,6 +2,10 @@
   --content-font: Arial, Helvetica, sans-serif;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   background-color: rgb(237, 255, 249);
 }
